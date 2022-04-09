@@ -48,6 +48,7 @@ void MainWindow::on_pStart_clicked()
     ui->pStart->setEnabled(false);
     if(ui->pStart->isEnabled()==false)
     {
+        //запускает поток каждые 5 секунд
         timer->start(5000);
         cthread->start();
     }
